@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "SoundScapes",
+	"Description": "UBC EMLx Spatial Audio Plugin",
+	"Category": "Other",
+	"CreatedBy": "UBC EMLx",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "SoundScapes",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
