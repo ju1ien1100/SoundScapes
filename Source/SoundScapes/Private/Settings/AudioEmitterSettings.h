@@ -3,6 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameFrameworks/Actor.h"
+#include "Componentes/PrimitiveComponent.h"
+#include "PhysicalMaterials/PhysicalMaterial.h"
 
 /**
  * Holds settings for an individual audio emitter.
@@ -13,18 +16,26 @@ public:
     // Constructor
     AudioEmitterSettings();
 
-    // Setters
-    void SetVolume(float NewVolume);
-    void SetPitch(float NewPitch);
-    void SetPosition(const FVector& NewPosition);
 
-    // Getters
-    float GetVolume() const;
-    float GetPitch() const;
+    void SetPosition(const FVector& NewPosition);
+    void SetOwner(AActor* NewOwner);
+    void SetMaterial(UPhysicalMaterial* NewMaterial);
+    void SetMass(float NewMass);
+    void SetShape(FVector NewShape);
+    void SetDensity(float NewDensity);
+
     FVector GetPosition() const;
+    UPhysicalMaterial* GetMaterial() const;
+    float GetMass() const;
+    FVector GetShape() const;
+    float GetDensity() const;
+
 
 private:
-    float Volume;
-    float Pitch;
     FVector Position;
+    AActor* Owner;
+    UPhysicalMaterial* Material;
+    float Mass;
+    FVector Shape;
+    float Density;  
 };

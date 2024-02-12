@@ -1,5 +1,7 @@
 #include "AudioEmitter.h"
 
+
+
 // Constructor implementation
 AudioEmitter::AudioEmitter()
     : AudioClip(nullptr), bIsPlaying(false), bIsLooping(false)
@@ -14,6 +16,11 @@ void AudioEmitter::Initialize(const AudioEmitterSettings& Settings)
     // Additional initialization code...
 }
 
+// Destructor implementation
+AudioEmitter::~AudioEmitter()
+{
+    // Code for cleanup or releasing resources
+}
 // Plays the audio associated with the emitter
 void AudioEmitter::Play()
 {
